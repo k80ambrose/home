@@ -1,0 +1,114 @@
+/* BODY */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  background-color: #FFFFFF;
+  color: #000000;
+}
+
+/* HEADER */
+header {
+  background-color: #ccccff; /* Updated to Periwinkle */
+  color: white;
+  padding: 40px 20px;
+  text-align: left;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100vw;
+  left: 0;
+  right: 0;
+  border-bottom: 1px solid black;
+}
+/* FOOTER */
+footer {
+  background-color: #ccccff; /* Periwinkle */
+  text-align: left;
+  padding: 20px;
+  border-top: 1px solid black;
+}
+/* TAG */
+.tags-container {
+  display: flex; /* This will enable flexbox for the container */
+  align-items: center; /* This will vertically center the children */
+  border-bottom: 1px solid black; /* This adds the border under the tags */
+  padding: 20px; /* Add some padding above and below the tags */
+}
+.tags-label {
+  margin-right: 10px; /* Add some space between the label and the tags */
+  font-size: larger; /* Increase the size as requested */
+}
+.tag, .project-category {
+  background-color: #FFFFFF;
+  color: #000000;
+  border: 1px solid #000000;
+  padding: 10px 15px;
+  margin: 0 2px;
+  cursor: pointer;
+  border-radius: 15px;
+}
+
+/* PROJECT */
+.projects {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Keep three columns */
+  gap: 0px; /* Adjusted to account for the grid gap */
+  width: 100%;
+  justify-content: center; /* This centers the grid items when fewer than 3 */
+}
+.projectbox {
+  background-color: #E5E5E5; /* Assuming you want to keep the grey background */
+  border: 1px solid #000000;
+  padding: 20px;
+  text-align: left; /* Keep text aligned to the left */
+  min-height: 30vh;
+  filter: blur(1px); /* Apply a slight blur by default. Adjust as needed. */
+  transition: filter 0.34s ease; /* Smooth transition for the filter effect */
+}
+.projectbox:hover {
+  filter: none; /* Remove the blur when hovering */
+}
+.project-category {
+  display: inline-block;
+}
+.project-link {
+  color: inherit; /* Inherits the text color from the parent */
+  text-decoration: none; /* Removes underline from links */
+  display: block; /* Makes the link fill the entire project box */
+  height: 100%;
+}
+/* PROJECT IMAGES & SPECIFIC STYLES */
+.projectbox.blobs {
+  background-image: url('assets/gifs/blobs.gif');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.projectbox.icgs {
+  background-image: url('assets/images/photography/isgs/DSC03813.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.projectbox.favs {
+  background-color: azure;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.projectbox.reciperepo {
+  background-image: url("assets/images/thumbnails/tarts.jpg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* RESPONSIVE STYLES*/
+@media (max-width: 768px) {
+  .projects {
+    grid-template-columns: 1fr; /* Keep a single column on small screens */
+  }
+  .projectbox {
+    width: 100%; /* Ensure projectbox fills the container */
+  }
+}
