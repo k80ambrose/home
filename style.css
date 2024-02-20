@@ -113,6 +113,12 @@ footer {
   background-position: center;
   background-repeat: no-repeat;
 }
+.projectbox.flowers {
+  background-image: url("assets/images/photography/flowers/lily.jpg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 
 a {
 text-decoration: none;
