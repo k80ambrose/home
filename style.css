@@ -33,12 +33,13 @@ footer {
   padding: 20px;
   border-top: 1px solid black;
 }
-/* TAG */
+/* TAGS */
 .tags-container {
-  display: flex; /* This will enable flexbox for the container */
-  align-items: center; /* This will vertically center the children */
-  border-bottom: 1px solid black; /* This adds the border under the tags */
-  padding: 20px; /* Add some padding above and below the tags */
+  display: flex; 
+  align-items: center; 
+  border-bottom: 1px solid black; 
+  padding: 20px;
+  position: sticky;
 }
 .tags-label {
   margin-right: 10px; /* Add some space between the label and the tags */
@@ -114,7 +115,7 @@ footer {
   background-repeat: no-repeat;
 }
 .projectbox.flowers {
-  background-image: url("assets/images/photography/flowers/lily.jpg");
+  background-image: url("assets/images/photography/flowers/orangeflower.jpg");
   background-size: 100%;
   background-position: center;
   background-repeat: no-repeat;

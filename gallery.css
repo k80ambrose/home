@@ -1,0 +1,26 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    text-align: center; /* Center align the gallery */
+  }
+  
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center the images within the gallery */
+    margin: 20px; /* Space around the gallery */
+  }
+  
+  .image-container {
+    flex-basis: calc(50% - 40px); /* 50% for two images per line, minus margin */
+    margin: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Optional: adds a shadow to images */
+  }
+  
+  .image-container img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1; /* Keeps the images square */
+    object-fit: cover; /* Ensure the images cover the area without stretching */
+  }
+  
