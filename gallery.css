@@ -11,16 +11,34 @@ body, html {
     margin: 20px; /* Space around the gallery */
   }
   
-  .image-container {
-    flex-basis: calc(50% - 40px); /* 50% for two images per line, minus margin */
-    margin: 20px;
+/* Base styles */
+
+.image-container {
+    width: 100%;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Optional: adds a shadow to images */
   }
   
   .image-container img {
     width: 100%;
     height: auto;
+    display: block; /* Ensures that no inline spacing is affecting the layout */
+    vertical-align: bottom; /* Aligns the image to the bottom */
     aspect-ratio: 1 / 1; /* Keeps the images square */
     object-fit: cover; /* Ensure the images cover the area without stretching */
   }
+  
+  /* Styles for screens larger than 600px */
+  
+  @media (min-width: 600px) {
+    .gallery {
+      display: flex;
+      justify-content: center;
+    }
+  
+    .image-container {
+      flex-basis: calc(50% - 40px); /* Adjust this value as needed */
+      margin: 20px;
+    }
+  }
+  
   
