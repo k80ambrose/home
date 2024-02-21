@@ -1,3 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@700&family=Mr+De+Haviland&display=swap')
+
+.mr-de haviland-regular {
+    font-family: "Mr De Haviland", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+h1 {
+    font-family: "Mr De Haviland", cursive;;
+}
+
 body, html {
     margin: 0;
     padding: 0;
