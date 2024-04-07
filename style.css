@@ -10,6 +10,12 @@ body {
   width: 100%;
 }
 
+/* TEXT */
+h1 {
+  margin-left: 2vw;
+  color: #000000;
+}
+
 /* HEADER */
 header {
   background-color: #ccccff; /* Updated to Periwinkle */
@@ -33,6 +39,7 @@ footer {
   padding: 20px;
   border-top: 1px solid black;
 }
+
 /* TAGS */
 .tags-container {
   display: flex; 
@@ -119,6 +126,13 @@ footer {
   background-size: 100%;
   background-position: center;
   background-repeat: no-repeat;
+}
+.projectbox.thesis {
+  background-image: url("assets/gifs/seaofthumbnailsvid.gif");
+  background-size: 150%;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #FFFFFF;
 }
 
 a {
